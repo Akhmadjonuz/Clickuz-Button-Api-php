@@ -2,11 +2,11 @@
 date_default_timezone_set('Asia/Tashkent');
 
 $keys = array(
-    "merchant_id" => "",
-    "service_id" => "",
-    "merchant_user_id" => "", //client id from database
-    "secret_key" => "",
-    "transID" => "",
+    "merchant_id" => "", //clickuz mutaxasislaridan olinadi
+    "service_id" => "", //merchant.click.uz/home/service orqali olasiz
+    "merchant_user_id" => "", //clickuz mutaxasislaridan olinadi
+    "secret_key" => "", // merchant.click.uz/home/service orqali olasiz
+    "transID" => "", //pul tushishi kerak bo'lgan mijoz id raqami yoki logini
 );
 
 
@@ -15,7 +15,7 @@ $merchantUserID = $keys['merchant_user_id'];
 $serviceID = $keys['service_id'];
 $transID = $keys['transID'];
 $transAmount = number_format(1000, 2, '.', '');
-$returnURL = "https://bots.uitc-host.uz/noorder/check.php";
+$returnURL = "https://example.com/check.php"; //natijani qaytarish uchun url
 ?>
 <!DOCTYPE html>
 
